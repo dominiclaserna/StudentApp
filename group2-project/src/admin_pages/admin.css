@@ -1,0 +1,37 @@
+#MainContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  #LeftSection{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.7;
+    justify-content: center;
+    align-items: center;
+  }
+
+#LeftSection img{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin-top: 70px;
+}
+
+#LeftSection button{
+    background-color: aquamarine;
+}
+
+#RightSection{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+}
+
+#UpperRightAdminSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+

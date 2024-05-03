@@ -1,0 +1,1618 @@
+#root{
+  height: 100%;
+  width: 100%;
+}
+
+/*CSS FOR STUDENT HOME*/
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#NavBarUL {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+nav li {
+  margin-top: 6px;
+  padding: 8px;
+  color: #d5e7ff;
+}
+
+#NavBarUL li a {
+  color:#ccd5e2;
+  text-decoration: none;
+}
+
+#NavBarUL li a:hover{
+  text-decoration: line-through;
+  color: #7a00ff;
+}
+
+#MainContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#headerdiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #334155;
+}
+
+#headerdiv p{
+  font-size:medium;
+  color: #ccd5e2;
+  padding-top: 8px !important;
+}
+
+#headerdiv h1{
+  font-size:x-large;
+  color: #ccd5e2;
+  margin-left: 10px;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+  align-items: center;
+}
+
+#logo img{
+  height:50px;
+  width: 50px;
+}
+
+#headerbuttons{
+  display: flex;
+  flex-direction: row;
+}
+
+#extraspace{
+  margin-right: 35px;
+}
+/*THIS ONE IS FOR THE NOTIFICATION!!*/
+#notifbutton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0;
+  margin-left: 25px;
+}
+
+#notifbutton button{
+  position:relative;
+  margin-left: 10px;
+  background-color: transparent;
+  border:0;
+}
+
+#notifbutton button:hover{
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
+  transform: scale(1.05) perspective(1px);
+}
+
+#notifbutton img{
+  width: 20px;
+  height: 20px;
+}
+
+#notifnum{  
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -10px;
+  right: -4px;
+  width: 15px;
+  height: 15px;
+  background: red;
+  color: #ffffff;
+  border-radius: 75%;
+}
+
+.notif{
+  width:300px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  position:absolute;
+  top:33%;
+  left:26%;
+  text-align: center;
+  color: #333;
+  display:none;
+}
+
+.show-notifs {
+  display: block;
+}
+
+
+#headerdiv button{
+  font-size: 20;
+  border-radius: 8px;
+  color: #ccd5e2;
+  background-color: transparent;
+  border:0;
+}
+
+#headerdiv button:hover {
+  color:rgb(214, 78, 185);
+  text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+#LeftSection{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+#ProfileCard{
+  background-color: #f8e8ff;
+  color: #ce4df3;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 75%;
+  margin-top: 10%;
+  border-radius: 12px;
+}
+
+#ProfileCard h2{
+  margin-bottom: 0px;
+  font-size:larger;
+}
+
+#ProfileCard p{
+  margin-top: 2px;
+}
+
+#ProfileCard img{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  height: 250px;
+  width: 150px;
+  outline: auto;
+}
+
+.approv3r #ProfileCard{
+  width: 280px;
+  margin-top: 20%;
+}
+#RightSection{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
+
+#appRightSection{
+  display: flex;
+  margin-top: 27px;
+  flex-direction: column;
+  flex-grow: 6;
+}
+.appnumcontent{
+  margin-left:55%;
+}
+.appnumcontent #numbercontent{
+  padding: 24px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#ClearanceHistoryDiv{
+  color: #96a4b9;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.inputsapp{
+  border-radius: 4px;
+  border: none;
+  outline: double pink;
+}
+
+#appform1 input{
+  margin-top: 5px;
+  padding: 10px;
+  width: 60%;
+  margin-left: 20px;
+}
+#appform2 input{
+  padding: 10px;
+  width: 60%;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+#appform3 input{
+  padding: 10px;
+  width: 60%;
+  margin-left: 20px;
+}
+.appsearchbtns{
+  border:solid #111 1px;
+  padding: 10px;
+  width: 18%;
+  border-radius: 10px;
+  margin-left: 20px;
+  background-color: rgb(214, 78, 185);
+}
+
+.appsearchbtns:hover{
+  color: white;
+}
+
+.appsortbtns{
+  align-items: center;
+  border:solid black 1px;
+  padding: 5px;
+  width: 90%;
+  border-radius: 2px;
+  margin-left: 5%;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.forspace{
+  padding: 10px;
+}
+.appsortbtns:hover{
+  color:white;
+  transform: scale(1.1);
+}
+#ClearanceHistoryDiv h1{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#HistoryContent{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #354256;
+  padding: 20px;
+  margin-right: 30px;
+}
+
+#HistoryHeaders{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 0;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  margin-bottom: 0;
+  border-radius: 8px;
+  color: #d5e7ff;
+}
+
+#HistoryContent card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  background-color: #6091f6;
+  border:0;
+  border-radius: 8px;
+  color: #d5e7ff;
+}
+
+#HistoryContent card:hover{
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
+  transform: scale(1.05) perspective(1px);
+}
+
+#HistoryContent button{
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(214, 78, 185);
+}
+
+#HistoryContent button:hover{
+  background-color: #111;
+}
+
+#RightSection{
+  margin-top: 27px;
+}
+
+#UpperRightSection{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#ClearanceInfo{
+  display: flex;
+  padding:10px;
+  flex-grow: 0.5;
+  margin-left: 30px;
+}
+
+#imageside{
+  display: flex;
+  flex-grow: 0.1;
+  background-color:#f8e8ff;  
+  align-items: center;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  justify-content: center;
+}
+
+#imageside img{
+  height: 80px;
+  width: 80px;
+}
+
+#clearancecontent{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.3;
+  background-color: #2e69ef;
+  width: 50%;
+  padding:10px;
+  color:#d5e7ff;
+}
+
+#clearancecontent h2{
+  color:#f8e8ff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#clearancecontent h3{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+#NumberInfo{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin-right: 30px;
+}
+
+#numbercontent{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  background-color: #2e69ef;
+  width: 100%;
+  padding:10px;
+  color:#d5e7ff;
+}
+
+#numbercontent h2{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#numbercontent h3{
+  margin-top: 0;
+  margin-bottom: 0;
+  color:#f8e8ff;
+}
+
+/* CSS FOR SIGNIN & SIGNUP PAGE */
+html,body{
+  margin: 0;
+  padding: 0;
+  height:100%;
+}
+
+body{
+  background-image: url("https://i.pinimg.com/originals/ad/63/6d/ad636d4b87e707b0f716f1af2af0d2cd.png");
+  background-position: center;
+}
+
+.flex-container{
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+
+#flex-admin-container{
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 90%;
+}
+
+.login-box{
+  display: flex;
+  color: #fae8ff;
+  flex-direction: column;
+  border: solid #fae8ff 2px;
+  border-radius: 10px;
+  height: 50%;
+  width: 60%;
+  margin-top: 2%;
+  background-color: rgba(209, 209, 211, 0.3);
+ 
+}
+
+.signindesign1{
+  position: absolute;
+  top: 11.5%;
+  left: 16.5%;
+  padding: 30px;
+  width: 56%;
+  height: 75%;
+  background-color: #2b2a2a ;
+  opacity: 0.5;
+  border-top: double #0051ff 4px;
+  border-left: double #df0eff 4px;
+  border-bottom: double #0051ff 4px;
+  border-right: double #df0eff 4px;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.signindesign2{
+  position: absolute;
+  top: 13%;
+  left: 16.5%;
+  padding: 30px;
+  width: 56%;
+  height: 75%;
+  background-color: #2b2a2a ;
+  opacity: 0.5;
+  border-top: double #0051ff 4px;
+  border-left: double #df0eff 4px;
+  border-bottom: double #0051ff 4px;
+  border-right: double #df0eff 4px;
+  border-radius: 20px;
+  z-index: -1;
+}
+.imgside{
+  display: flex;
+  flex-direction: column;
+  margin-top: -40% ;
+  margin-left: 60%;
+  width: 39.5%;
+  height: 32%;
+  border-left: solid #d946ef 5px;
+  border-bottom-right-radius: 10px;
+}
+
+.imgside:hover{
+  filter:hue-rotate(-0.25turn);
+}
+
+#l-email, #l-password{
+  border-radius: 10px;
+  margin-left: 9.5%;
+  padding: 6px;
+  padding-left: 45px;
+  width: 35%;
+  border: none;
+  outline: double pink;
+}
+
+.welcome{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 10px;
+  margin-left: 20%;
+  font-size: 40px;
+  background-color: #111;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius:10px ;
+  border-left: solid #d946ef 5px;
+  padding-left: 40px;
+  z-index: 1;
+}
+
+.label{
+  font-size: 17px;
+  margin-left: 12%;
+}
+
+.loginbutton {
+  font-size: 15px;
+  width: 36%;
+  height: 20%;
+  border: double grey;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  top: 33%;
+  right:36%;
+  z-index: 0;
+  border-radius: 50px;
+}
+
+#donthaveanacc{
+  font-size: 16px;
+  margin-left: 18%;
+  margin-top: 1%;
+}
+
+.loginbutton:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 50px;
+}
+
+.loginbutton:active {
+  color: #000
+}
+
+.loginbutton:active:after {
+  background: transparent;
+}
+
+.loginbutton:hover:before {
+  opacity: 1;
+}
+
+.loginbutton:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+#lgnbtn{
+  margin-top: 4%;
+  margin-left: 47%;
+  width: 36%;
+  height: 40px;
+}
+
+.linksignup{
+  text-decoration: underline;
+  color: white;
+  font-weight:400;
+}
+
+.linksignup:hover{
+  color: #d946ef;
+}
+
+.inputs{
+  border-radius: 4px;
+  padding: 10px;
+  margin: 1%;
+  margin-left: 5.5%;
+  width: 43%;
+  border: none;
+  padding-left: 45px;
+  outline: double pink;
+}
+
+#signupbtn{
+  margin-top: 2%;
+  margin-left: 45.5%;
+  width: 40%;
+  height: 45px;
+}
+
+.suimgside{
+  display: flex;
+  flex-direction: column;
+  margin-top: -55.5% ;
+  margin-left: 59.5%;
+  width: 40%;
+  height: 32%;
+  z-index: 0;
+  border-left: solid #d946ef 5px;
+  border-bottom-right-radius: 10px;
+}
+
+.suimgside:hover{
+  filter:hue-rotate(-0.25turn);
+}
+
+#backtologin{
+  font-size: 15px;
+  margin-left: 19%;
+}
+
+#ButtonSection{
+  display: flex;
+  flex-direction: row;
+}
+
+#ButtonSection button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f8e8ff;
+  color: #ce4df3;
+  width: 100%;
+  height: 50px;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 8px;
+  margin-right: 12px;
+}
+
+#ButtonSection button:hover {
+  background-color: #334155;
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
+  color:#D9D9D9;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+#ButtonSection a{
+  margin-left: 7px;
+  text-align: center;
+}
+
+#UnderClearance{
+  display: flex;
+  flex-direction: row;
+}
+
+#DownloadButton{
+  display: flex;
+  margin-left: 5px;
+  background-color: #2e69ef;
+  color:#ccd5e2;
+}
+
+#UnderClearance img{
+  height: 30px;
+  width: 30px;
+}
+
+/*------------------------------------------*/
+/*CSS PART FOR APPLICATION DETAILS */
+
+#AppDetailsForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  color:#96a4b9;
+}
+
+#AppDetailsForm h1{
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 0;
+  -webkit-text-fill-color: #6091f6;
+  -webkit-text-stroke-width: .8px;
+}
+
+#AppDetailsForm p{
+  color:#ce4df3;
+  font-size: x-large;
+  margin-top:1px;
+  margin-bottom: 0;
+}
+
+#AppDetailsForm label{
+  margin-bottom: 10px;
+  font-size: medium;
+}
+
+
+#AppDetailsForm input[type=text]{
+  border: none;
+  border-bottom: 2px solid #96a4b9;
+  background-color: transparent;
+  width: 100%;
+  color:#96a4b9;
+}
+
+
+#AppDetailsForm button{
+  display: flex;
+  padding: 12px 28px;
+  background-color: #2e69ef;
+  color:#ccd5e2;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#AppDetailsForm button:hover{
+  background-color: transparent;
+}
+
+.container-details{
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+height: 90%;
+margin: 0;
+padding: 0;
+}
+
+#ApplicationMainContainer{
+display:flex;
+align-items: center;
+justify-content: center;
+background-color: whitesmoke;
+max-width: 700px;
+width: 100%;
+margin:auto;
+height: 50vh;
+border-radius: 12px;
+}
+
+/*Student Details*/
+
+.StudentContainer{
+display: flex;
+justify-content: center;
+align-items: flex-start;
+align-content: center;
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+#StudentDetailsSection{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: center;
+  background-color: whitesmoke;
+  max-width: 700px;
+  width: 100%;
+  margin:auto;
+  height: 100%;
+  border-radius: 12px;
+  }
+
+  #StudentDetailsSection h1{
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 0;
+    -webkit-text-fill-color: #6091f6;
+    -webkit-text-stroke-width: .8px;
+  }
+
+  #StudentDetailsSection h2{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size:large;
+    color: #ce4df3;
+  }
+
+  #StudentDetailsSection h3{
+    margin-top: 5;
+    margin-bottom: 0;
+  }
+
+  #StudentDetailsSection p{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+#remarkscontent{
+  background-color:#171f2c ;
+  width: 70%;
+  border-radius: 8px;
+  padding-left: 15px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#remarkscontent p{
+  margin-top: 0;
+  margin-bottom: 0;
+  color:#2e69ef;
+}
+
+#remarkscontent h3{
+  color: black;
+  -webkit-text-fill-color: #ce4df3;
+  -webkit-text-stroke-width: .3px;
+  margin-top: 0;
+}
+
+#StudentDetailsSection button{
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 8px;
+}
+
+#StudentDetailsSection button:hover{
+    background-image: linear-gradient(to right, blue, rgb(214, 78, 185));
+    color:black;
+}
+
+/*-------------------------------------------------*/
+
+/*This is for ADMIN*/
+
+
+
+
+#RequestListDiv{
+  color: #96a4b9;
+  margin-left: 30px;
+  margin-bottom: 25px;
+}
+
+#RequestListDiv h1{
+  margin-bottom: 2px;
+}
+
+#RequestContent{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #354256;
+  padding: 5px;
+  margin-right: 30px;
+}
+
+
+#RequestContent card{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  background-color: #6091f6;
+  border:0;
+  border-radius: 8px;
+  color: #d5e7ff;
+}
+
+
+#LeftAdminSection{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+#ProfileAdminCard{
+  background-color: transparent;
+  color: #ce4df3;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 75%;
+  margin-top: 3%;
+  border-radius: 12px;
+}
+
+#ProfileAdminCard h2{
+  margin-bottom: 9%;
+  font-size:larger;
+}
+
+#ProfileAdminCard img{
+  display: flex;
+  align-items: center;
+  margin-top: 35%;
+  height: 180px;
+  width: 180px;
+  outline: auto;
+  outline: 0;
+}
+
+#userrequestcontent{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.3;
+  background-color: #2e69ef;
+  width: 50%;
+  padding:10px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  color:#d5e7ff;
+}
+
+#userrequestcontent h2{
+  color:#f8e8ff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#userrequestcontent h3{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#UserRequestInfo{
+  display: flex;
+  padding:10px;
+  flex-grow: 0.5;
+  margin-left: 20px;
+}
+
+#UserApplicationsInfo{
+  display: flex;
+  padding:10px;
+  flex-grow: 0.5;
+  margin-left: 30px;
+}
+
+#ClearanceHistoryDiv1{
+  display: flex;
+  flex-direction: row;
+}
+.adminbtnadv{
+  border: double #203653;
+  padding: 12px;
+  background-color: #475569;
+  color: white;
+  border-radius: 19px;
+  margin-bottom: 10px;
+  width: 75%;
+}
+
+.adminbtnadv:hover{
+  background-image: linear-gradient(to right, blue, rgb(214, 78, 185));
+  color:black;
+}
+
+.adminbtnapp{
+  border: double #203653;
+  padding: 12px;
+  background-color: #475569;
+  color: white;
+  border-radius: 19px;
+  width: 75%;
+}
+
+.adminbtnapp:hover{
+  background-image: linear-gradient(to right, blue, rgb(214, 78, 185));
+  color:black;
+}
+
+#RequestListDiv button{
+  border: none;
+  padding: 12px;
+  background-color: #334155;
+  color: white;
+  border-radius: 5px;
+  margin-top: 18px;
+  margin-right: 7px;
+  margin-bottom: 15px;
+}
+
+#RequestListDiv button:hover{
+  font-size: 14px;
+  background-color: #111;
+  color:rgb(214, 78, 185);
+}
+#sortbtn{
+  margin-left: 11px;
+}
+
+#RequestContent h2{
+  font-size: 18.5px;
+  margin-left: 40px;
+}
+
+#RequestContent a{
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #cbd5e1,#cbd5e1);
+  padding: 6px;
+  width: 70px;
+  color: #111;
+  margin-top: 12px;
+  position: absolute;
+  left: 85%;
+}
+
+#RequestContent a:hover{
+  color: rgb(214, 78, 185);
+
+}
+
+/* CSS FOR ADMIN PAGE - APPROVER-LIST */
+
+.searchbtns{
+  border-radius: 10px;
+  border: none;
+  margin: 6px;
+  width: 20%;
+  padding: 12px;
+  margin-top: 30px;
+}
+
+.formsearch{
+  text-align: center;
+}
+
+.searchsubmit{
+  margin-left: 1%;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  border: double #263141;
+  background-color: #475569;
+  color: white;
+}
+
+.searchsubmit:hover{
+  background-color: #61738b;
+}
+
+.ascdescbtn{
+  text-align: center;
+  margin-top: 1%;
+}
+
+.asc{
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color:#000;
+}
+
+.asc:hover{
+  color: rgb(214, 78, 185);
+}
+
+.desc{
+  margin-left: 5px;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #000;
+}
+
+.desc:hover{
+  color:#2563eb;
+}
+
+.approverlist{
+  position: relative;
+  top: 20px;
+  left: 17%;
+  padding: 8px 20px;
+  margin: 1%;
+  margin-bottom: 30px;
+  width: 60%;
+  border-radius: 10px;
+  background-color: #171f2c;
+}
+
+.appname{
+  background-color: white;
+  padding: 10px;
+  width: 80%;
+  font-size: 17px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.appemp{
+  background-color: #111;
+  color:white;
+  padding: 2px 5px;
+  width: 81%;
+  font-size: 14px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.editbtn{
+  color:#000;
+  background-color: #2563eb;
+  font-size: 15px;
+  margin-top: -20%;
+  float: right;
+  border:none;
+  width: 15%;
+  padding: 20px;
+  border-top-right-radius: 10px;
+  
+}
+
+.editbtn:hover{
+  background-color: black;
+  color: #2563eb;
+}
+
+.delbtn{
+  font-size: 15px;
+  color:black;
+  background-color: rgb(214, 78, 185);
+  margin-top: -10%;
+  float: right;
+  border:none;
+  width: 15%;
+  padding: 20px;
+ 
+  border-bottom-right-radius: 10px;
+}
+
+.delbtn:hover{
+  background-color: black;
+  color: rgb(214, 78, 185);
+}
+
+.bgapprover{
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: #374252;
+  padding: 10px 2px;
+}
+
+.addappbtn{
+  margin-top: 2%;
+  width: 45%;
+  border: none;
+  border: double #263141;
+  background-color: #475569;
+  color: white;
+  padding: 15px;
+  margin-left: 24%;
+  border-radius: 10px;
+}
+
+.addappbtn:hover{
+  background-color: #61738b;
+}
+
+
+#ApproversAndStudents {
+  color: #96a4b9;
+  margin-left: 30px;
+  margin-bottom: 25px;
+  margin-right: 20px;
+}
+
+#ApproversAndStudents button {
+  border: none;
+  padding: 12px;
+  background-color: #263141;
+  color: white;
+  border-radius: 5px;
+  margin-top: 18px;
+  margin-right: 7px;
+  margin-bottom: 15px;
+}
+
+#ApproversAndStudents button:hover {
+  font-size: 14px;
+  background-color: #263141;
+  color:rgb(214, 78, 185);
+}
+
+#ApproversStudentsDetails{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+  background-color: #354256;
+  padding: 5px;
+  margin-right: 30px;
+}
+
+#ApproversStudentsListSection h3 {
+  margin-left: 10px;
+  color: #d5e7ff;
+}
+
+#ApproversStudentsDetails card{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  background-color: #6091f6;
+  border:0;
+  border-radius: 8px;
+  color: #d5e7ff;
+}
+
+#ApproversStudentsDetails h4{
+  margin-left: 8px;
+}
+
+#StudentApproverSelected {
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #354256;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 10px;
+  border-radius: 10px;
+  padding-bottom: 5px;
+
+}
+
+#ApproversStudentsDetails button{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: baseline;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  background-color: #d5e7ff;
+  border:0;
+  border-radius: 8px;
+  color: #61738b;
+}
+
+#ApproversStudentsDetails button:hover{
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
+  background-color: #d5e7ff;
+  transform: scale(1.05) perspective(1px);
+}
+
+/*CSS FOR ADD APPROVER PAGE */
+
+.addapprover{
+  background-color: rgba(255, 255, 255, 0.589);
+  width:35%;
+}
+
+#createapprover input{
+ padding: 10px;
+ width: 60%;
+ margin-left: 20%;
+}
+
+#createapprover button{
+  margin-left: 30%;
+}
+
+.iconbox{
+  background-color: pink;
+  width: 22px;
+  height: 23px;
+  padding: 7px;
+  border: solid black 1px;
+  margin-left: 12.5%;
+  position: relative;
+  top: 39px;
+}
+
+.textapp{
+  font-size: larger;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.textapp:hover{
+  color: rgb(214, 78, 185);
+}
+#createappbtn{
+  background-color: #cbd5e1;
+  padding: 12px;
+  border-radius: 10px;
+  width: 40%;
+  margin-top: 30px;
+  border: solid rgb(101, 119, 124) 1px;
+}
+
+#createappbtn:hover{
+  background-color: #6c80a0;
+  color:white;
+}
+
+.appbg{
+  height: 90%;
+  margin: auto;
+}
+
+.icons-sign .iconsgn{
+  color: #c0c0c0;
+  position: absolute;
+  margin-left: 7%;
+  margin-top: 5px;
+}
+
+.icons-signup .iconsgn{
+  color: #c0c0c0;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 18px;
+}
+
+.neonbg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.1;
+}
+
+#appcontentcard a{
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #cbd5e1,#cbd5e1);
+  padding: 6px;
+  width: 70px;
+  color: #111;
+  margin-top: 20px;
+  position: absolute;
+  left: 86%;
+}
+
+#appcontentcard a:hover{
+  color: rgb(214, 78, 185);
+
+}
+
+.spaceh2{
+  margin-right: 10%;
+}
+
+/*This part is for approver details*/
+
+.approve-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+#ApplicationDetailsSection{
+  display:flex;
+  flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: whitesmoke;
+max-width: 700px;
+width: 100%;
+margin:auto;
+height: 100%;
+border-radius: 12px;
+}
+
+#ApplicationDetailsSection h1{
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 0;
+  -webkit-text-fill-color: #6091f6;
+  -webkit-text-stroke-width: .8px;
+}
+
+#ApplicationDetailsSection h2{
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size:large;
+  color: #ce4df3;
+}
+
+#ApplicationDetailsSection h3{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#ApplicationDetailsSection p{
+  margin-top: 0;
+}
+
+#ApplicationDetailsSection button{
+  margin-top: 8px;
+  background-color:rgb(214, 78, 185);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 8px;
+}
+
+
+
+
+#approverremarkscontent{
+  background-color:#171f2c ;
+  width: 70%;
+  border-radius: 8px;
+  padding-left: 15px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#approverremarkscontent p{
+  margin-top: 0;
+  margin-bottom: 2px;
+  color:#2e69ef;
+}
+
+#approverremarkscontent h3{
+  color: black;
+  -webkit-text-fill-color: #ce4df3;
+  -webkit-text-stroke-width: .3px;
+  margin-top: 0;
+  margin-bottom: 1px;
+}
+
+/*------------------------------------------------*/
+/*Admin Details*/
+
+#ApproveRejectSection {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+  color: #96a4b9;
+}
+
+#ApproveRejectSection button {
+  display: flex;
+  padding: 12px 20px;
+  background-color: #2e69ef;
+  color: #ccd5e2;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+#RemarksSection {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+}
+
+#RemarksSection label {
+  margin-bottom: 10px;
+  font-size: medium;
+}
+
+#RemarksSection input[type=text] {
+  border: none;
+  border-bottom: 2px solid #96a4b9;
+  background-color: transparent;
+  width: 100%;
+  color: #96a4b9;
+}
+
+
+/*Admin: Student Application Details*/
+
+.studentapp-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.studentapp-container{
+  display:flex;
+align-items: center;
+justify-content: center;
+background-color: whitesmoke;
+max-width: 700px;
+width: 100%;
+margin:auto;
+height: 50vh;
+border-radius: 12px;
+}
+
+#ApproveRejectSection h1{
+  color: black;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  -webkit-text-fill-color: #6091f6;
+  -webkit-text-stroke-width: .8px;
+}
+
+#ApproveRejectSection h3{
+  margin-top: 3px;
+  margin-bottom: 0;
+  color:#ce4df3;
+  text-align: center;
+}
+
+#approverejectbuttons{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-right: 15px;
+}
+
+#approverejectbuttons button{
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+#approverejectbuttons button:hover{
+  background-image: linear-gradient(to right, blue, rgb(214, 78, 185));
+  color:black;
+}
+
+
+#approverejectbuttons button{
+  background-color:rgb(214, 78, 185)
+}
+
+.bgbgbg{
+  height: 100%;
+}
+
+
+/*APPROVER SORT BUTTONS*/
+
+#approversort{
+  display: flex;
+  flex-direction: row;
+}
+
+#approversort button{
+  border: none;
+    padding: 6px;
+    background-color: #334155;
+    color: white;
+    border-radius: 5px;
+    margin-top: 18px;
+    margin-right: 7px;
+    margin-bottom: 15px;
+}
